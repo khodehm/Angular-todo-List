@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+body {
+  display: table;
+  border-collapse: collapse;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

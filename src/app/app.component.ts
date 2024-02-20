@@ -11,7 +11,7 @@ function generatedId(): number {
   standalone: true,
   imports: [RouterOutlet, NgFor],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.output.css',
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Todo';
@@ -26,16 +26,6 @@ export class AppComponent {
     {
       id: 2,
       description: 'task 2',
-      done: false,
-    },
-    {
-      id: 3,
-      description: 'task 3',
-      done: true,
-    },
-    {
-      id: 4,
-      description: 'task 4',
       done: false,
     },
   ];

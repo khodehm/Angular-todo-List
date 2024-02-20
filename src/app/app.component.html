@@ -1,17 +1,22 @@
-<div class="flex shadow-md bg-white font-sans items-center p-6">
-  <div class="text-center">
-    <h1>{{ title }}</h1>
-    <ul class="list-outside hover:list-inside">
-      <li><b>ToDo App</b></li>
+<div class="items-center">
+  <div class="shadow-sm bg-slate-500">
+    <h1>
+      <li>
+        <b>{{ title }}</b>
+      </li>
+    </h1>
+  </div>
+  <div class="shadow-lg bg-slate-100">
+    <ul>
       <li *ngFor="let task of tasks">
         {{ task.description }}
       </li>
     </ul>
   </div>
-  <div class="shadow-xl bg-slate-900">
+  <div class="shadow-sm">
     <label for="addItemInput">What You are goning to do ?</label>
     <input
-      class="blur-sm hover:backdrop-blur-xl"
+      class="hover:backdrop-blur-sm"
       type="text"
       #newItem
       (keyup.enter)="addItems(newItem.value); newItem.value = ''"
