@@ -13,7 +13,7 @@ function generatedId(): number {
   standalone: true,
   imports: [RouterOutlet, NgFor, FormComponent, FormsModule, HomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  // styleUrl: './app.component.css',
 })
 export class AppComponent implements AfterViewInit {
   title = 'Todo';
