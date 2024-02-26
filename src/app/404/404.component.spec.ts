@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { 404Component } from './404.component';
+import { notFound } from './404.component';
 
 describe('404Component', () => {
-  let component: 404Component;
-  let fixture: ComponentFixture<404Component>;
+  let component: notFound;
+  let fixture: ComponentFixture<notFound>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [404Component]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(404Component);
+      imports: [notFound],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(notFound);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
