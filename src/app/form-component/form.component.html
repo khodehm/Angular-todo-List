@@ -9,7 +9,25 @@
     />
 
     @if (email.invalid) {
-    <mat-error>{{ getErrorMessage() }}</mat-error>
+    <mat-error>{{ getEmailErrorMessage() }}</mat-error>
     }
   </mat-form-field>
+  <div>
+    <mat-label class="text-lg font-sans">enter text</mat-label>
+    <input
+      matInput
+      class="h-5 w-full"
+      type="text"
+      required
+      #inputText
+      [formControl]="text"
+    />
+    @if (!text){
+    <mat-error>{{ getInputErrorMessage }}</mat-error>
+    }
+    <mat-hint (ngModelChange)="(onFormSubmit)" [(ngModel)]="valueText">{{
+      valueText
+    }}</mat-hint>
+    <input type="submit" value="submit" [(ngModel)]="valueText" />
+  </div>
 </div>

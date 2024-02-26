@@ -18,4 +18,4 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     RouterOutlet,
   ],
 })
-export class MenuNestedExample {}
+export class navBar {}
