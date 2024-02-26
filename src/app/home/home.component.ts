@@ -7,6 +7,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardLgImage, MatCardModule } from '@angular/material/card';
+import { navBar } from '../nav-bar/nav-bar.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -19,6 +20,7 @@ import { MatCardLgImage, MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    navBar,
   ],
 })
 export class HomeComponent {
@@ -28,7 +30,7 @@ export class HomeComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 2, rows: 1 },
+          { title: 'Card 1', cols: 1, rows: 1 },
           { title: 'Card 2', cols: 1, rows: 1 },
           { title: 'Card 3', cols: 1, rows: 1 },
           { title: 'Card 4', cols: 1, rows: 1 },

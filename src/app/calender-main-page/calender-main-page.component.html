@@ -54,8 +54,9 @@
           </svg>
         </button>
       </div>
+
       <div class="hidden md:ml-4 md:flex md:items-center">
-        <div class="relative">
+        <div class="relative" (click)="(menuEvent)">
           <button
             type="button"
             class="flex items-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
@@ -88,8 +89,9 @@
                 From: "transform opacity-100 scale-100"
                 To: "transform opacity-0 scale-95"
             -->
+
           <div
-            class="absolute right-0 z-10 mt-3 w-36 origin-top-right overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            class="absolute hidden right-0 z-10 mt-3 w-36 origin-top-right overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
@@ -133,12 +135,14 @@
           </div>
         </div>
         <div class="ml-6 h-6 w-px bg-gray-300"></div>
-        <button
-          type="button"
-          class="ml-6 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+        <a href="todo"
+          ><button
+            type="button"
+            class="ml-6 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+          >
+            Add event
+          </button></a
         >
-          Add event
-        </button>
       </div>
       <div class="relative ml-6 md:hidden">
         <button
