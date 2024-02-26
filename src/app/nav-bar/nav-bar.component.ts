@@ -27,7 +27,7 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 })
 export class navBar implements AfterViewInit {
   toggleShow: boolean = false;
-  @ViewChild('toggle', { static: false }) toggle: ElementRef;
+  @ViewChild('toggle', { read: ElementRef }) toggle: ElementRef;
   /**
    *
    */
@@ -40,6 +40,8 @@ export class navBar implements AfterViewInit {
   }
   clickEvent() {
     console.log(this.toggleShow);
+    console.log(this.toggle);
+
     this.toggleShow = !this.toggleShow;
   }
   private breakpointObserver = Inject(BreakpointObserver);

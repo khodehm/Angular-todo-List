@@ -7,12 +7,7 @@ import { AppComponent } from './app.component';
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'calender', component: CalenderMainPageComponent },
-  {
-    path: 'todo',
-    component: TodoComponent,
-  },
-  { path: '', redirectTo: 'notFound', pathMatch: 'full' },
-
-  { path: '*', component: notFound },
-  { path: '**', redirectTo: 'notFound' },
+  { path: 'todo', component: TodoComponent },
+  { path: '', component: notFound },
+  { path: '**', component: notFound },
 ];
